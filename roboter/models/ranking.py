@@ -84,6 +84,13 @@ class RankingModel(CsvModel):
             return None
 
         sorted_data = sorted(self.data, key=self.data.get, reverse=True)
+        print(self.data)
+        print(self.data.items())
+        print(self.data.keys())
+        print(self.data.values())
+        print(self.data.get)
+        print(sorted_data)
+        print(sorted_data[0][0])
         for name in sorted_data:
             if name in not_list:
                 continue
